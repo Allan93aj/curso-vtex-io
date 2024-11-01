@@ -1,0 +1,64 @@
+{
+  "flex-layout.row#2-desktop":{
+    "children": [
+      "flex-layout.col#2-desktop-col-left",
+      "flex-layout.col#2-desktop-col-right"
+    ]
+  },
+
+  // coluna da esquerda 
+  "flex-layout.col#2-desktop-col-left":{
+    "children": [
+      "vtex.menu@2.x:menu#topmenu-left"
+    ]
+  },
+  
+  "vtex.menu@2.x:menu#topmenu-left": {
+    "children": [
+      "menu-item#quem-somos",
+      "menu-item#trocas-e-devolucoes"
+    ]
+  },
+  "menu-item#quem-somos": {
+    "props": {
+      "id": "menu-item-quem-somos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/quem-somos",
+        "noFollow": false,
+        "tagTitle": "Quem somos",
+        "text": "Quem somos"
+      }
+    }
+  },
+  "menu-item#trocas-e-devolucoes": {
+    "props": {
+      "id": "menu-item-trocas-e-devolucoes",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/trocas-e-devolucoes",
+        "noFollow": false,
+        "tagTitle": "Trocas e devoluções",
+        "text": "Trocas e devoluções"
+      }
+    }
+  },
+
+  // coluna da direita
+  "flex-layout.col#2-desktop-col-right":{
+    "children": [
+      "vtex.menu@2.x:menu#topmenu-right"
+    ]
+  },
+  "vtex.menu@2.x:menu#topmenu-right":{
+    "children": []
+  }
+  
+  
+}

@@ -1,0 +1,57 @@
+{
+    // NOTIFICATION BAR || TOPBAR
+  "flex-layout.row#1-desktop": {
+    "children": [
+      "slider-layout#notification-bar"
+    ],
+    "props": {
+      "fullWidth": true
+    }
+  },
+
+  "slider-layout#notification-bar": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "autoplay": {
+        "timeout": 3000,
+        "stopOnHover": true
+      },
+      "blockClass": "notification-bar"
+    },
+    "children": [
+      "rich-text#notification-bar1",
+      "rich-text#notification-bar2",
+      "rich-text#notification-bar3"
+    ]
+  },
+
+  "rich-text#notification-bar1":{
+    "props": {
+      "text": "Ganhe 10% OFF Valido para as 100 primeiras compras",
+      "blockClass": "notification"
+    }
+    
+  },
+
+  "rich-text#notification-bar2":{
+    "props": {
+      "text": "Ganhe 10% OFF Valido para as 100 primeiras compras",
+      "blockClass": "notification"
+    }
+  },
+
+  "rich-text#notification-bar3":{
+    "props": {
+      "text": "Ganhe 10% OFF Valido para as 100 primeiras compras",
+      "blockClass": "notification"
+    }
+  }
+
+}
